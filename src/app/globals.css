@@ -24,3 +24,60 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.tumar-popup {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  padding: 14px 16px;
+  width: 260px;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  position: relative;
+  pointer-events: auto;
+  border: 1px solid #e7e5e4;
+}
+
+.tumar-popup::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tumar-popup__city {
+  font-size: 11px;
+  font-weight: 600;
+  color: #b45309;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.tumar-popup__name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1c1917;
+  margin-bottom: 4px;
+}
+
+.tumar-popup__addr {
+  font-size: 13px;
+  color: #57534e;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.tumar-popup__phone {
+  font-size: 13px;
+  color: #b45309;
+  text-decoration: none;
+}
+
+.tumar-popup__phone:hover {
+  text-decoration: underline;
+}
