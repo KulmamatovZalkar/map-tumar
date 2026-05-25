@@ -31,7 +31,10 @@ export default function Home() {
         <button
           type="button"
           aria-label="Открыть список магазинов"
-          onClick={() => setDrawerOpen(true)}
+          onClick={() => {
+            setActiveId(null);
+            setDrawerOpen(true);
+          }}
           className="md:hidden p-2 -ml-2 rounded hover:bg-stone-100 text-[#39423E]"
         >
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
